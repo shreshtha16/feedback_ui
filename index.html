@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="feedback-card" id="feedbackCard">
+      <h2>How satisfied are you with our service?</h2>
+      <div class="feedback-options">
+        <div class="feedback-option" data-feedback="Unhappy">😞</div>
+        <div class="feedback-option" data-feedback="Neutral">😐</div>
+        <div class="feedback-option" data-feedback="Happy">😊</div>
+        <div class="feedback-option" data-feedback="Very Happy">😍</div>
+      </div>
+      <button id="sendFeedback" disabled>Send Feedback</button>
+    </div>
+    <div class="thank-you-card" id="thankYouCard" style="display: none;">
+      <h2>Thank You!</h2>
+      <p>Your feedback: <span id="selectedFeedback"></span></p>
+      <p>We appreciate your response and strive to improve our services.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
